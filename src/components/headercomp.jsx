@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import NavDropdown from "./navdropdown";
+import { useNavigate } from "react-router-dom";
 
 const Headercomp = () => {
+
+   const navigate = useNavigate();
 
   const [isVenueDropdownOpen, setVenueDropdownOpen] = useState(false);
   const [isVendorsDropdownOpen, setVendorsDropdownOpen] = useState(false);
@@ -442,7 +445,7 @@ const Headercomp = () => {
     <>
       <div className="navbar">
         <div className="nav-left">
-            <h1>MakeMy<span>Wedding</span> </h1>
+            <h1 onClick={() => {navigate('/')}}>MakeMy<span>Wedding</span> </h1>
         </div>
 
         <div className="nav-center">
@@ -537,7 +540,7 @@ const Headercomp = () => {
         </div>
         <div className="nav-right">
             <i className="fa-solid fa-magnifying-glass"></i>
-            <button>Log In</button>
+            <button onClick={() => {navigate('/login')}}>Log In</button>
         </div>
       </div>
     </>
