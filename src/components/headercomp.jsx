@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import NavDropdown from "./navdropdown";
 import { useNavigate } from "react-router-dom";
+import Sidebarcomp from './sidebarcomp';
+import '../css/sidebar.css'
 
 const Headercomp = () => {
 
@@ -444,11 +446,20 @@ const Headercomp = () => {
   return (
     <>
       <div className="navbar">
+
+        <input type="checkbox" id='check'/>
+
+        {<Sidebarcomp/>}
+
         <div className="nav-left">
+            <label id="open-menu" htmlFor='check'>
+              <i class="fa-solid fa-bars"></i>
+            </label>
             <h1 onClick={() => {navigate('/')}}>MakeMy<span>Wedding</span> </h1>
         </div>
 
         <div className="nav-center">
+
             <ul>
                 <li onMouseEnter={handleVenueDropdownToggle} onMouseLeave={handleVenueDropdownToggle}>
                   <h3>Venues</h3>

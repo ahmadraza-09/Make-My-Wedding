@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: end;
     padding-bottom: 30px;
+    /* display: none; */
 }
 
 .hero-section h1 {
@@ -53,52 +54,6 @@
     font-size: 15px;
 }
 
-.suggestions-container {
-    width: 340px;
-    height: 200px;
-    overflow-y: scroll;
-    background-color: #fff;
-    color: #000;
-    font-size: 12px;
-    position: absolute;
-    top: 60px;
-    left: 10px;
-    display: none;
-}
-
-.suggestion {
-    padding: 10px;
-    cursor: pointer;
-    border-bottom: 1px solid #ccc;
-}
-
-.suggestion:hover {
-    background-color: #ccc;
-}
-
-.suggestions-container2 {
-    width: 340px;
-    height: 200px;
-    overflow-y: scroll;
-    background-color: #fff;
-    color: #000;
-    font-size: 12px;
-    position: absolute;
-    top: 60px;
-    left: 350px;
-    display: none;
-}
-
-.suggestion2 {
-    padding: 10px;
-    cursor: pointer;
-    border-bottom: 1px solid #ccc;
-}
-
-.suggestion2:hover {
-    background-color: #ccc;
-}
-
 .search-input-box input::placeholder {
     color: #000;
 }
@@ -122,6 +77,10 @@
     color: #fff;
     font-size: 15px;
     cursor: pointer;
+}
+
+.search-button-box {
+    display: none;
 }
 
 /* Popular Searches */
@@ -154,4 +113,157 @@
 .popular-searches-links a:last-child {
     padding: 0px;
     border: none;
+}
+
+@media (min-width: 840px) and (max-width: 1000px) {
+
+    .hero-section h1 {
+        font-size: 30px;
+    }
+
+    .hero-section h4 {
+        font-size: 20px;
+    }
+
+    .popular-searches {
+        gap: 10px;
+    }
+
+    .search-input-box input {
+        height: 40px;
+        width: 250px;
+    }
+
+    .popular-searches h4 {
+        font-size: 15px;
+    }
+
+    .popular-searches-links {
+        font-size: 12px;
+    }
+}
+
+/* 680px to 840px */
+@media (min-width: 680px) and (max-width:840px) {
+
+    .hero-section h1 {
+        font-size: 30px;
+    }
+
+    .hero-section h4 {
+        font-size: 20px;
+    }
+
+    .popular-searches {
+        gap: 10px;
+    }
+
+    .search-input-box input {
+        height: 40px;
+        width: 220px;
+    }
+
+    .search-box button {
+        width: 120px;
+    }
+
+    .popular-searches h4 {
+        font-size: 15px;
+    }
+
+    .popular-searches-links {
+        font-size: 12px;
+    }
+    
+}
+
+/* 480px to 680px */
+@media (min-width: 480px) and (max-width:680px) {
+
+    .hero-section h1 {
+        width: 100%;
+        font-size: 30px;
+        text-align: start;
+        padding-left: 20px;
+    }
+    
+    .hero-section h4 {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    
+
+    .search-button-box {
+        position: absolute;
+        top: 300px;
+        width: 420px;
+        height: 60px;
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+    }
+
+    .search-button-box i:first-child {
+        height: 100%;
+        width: 60px;
+        font-size: 30px;
+        background-color: #e72e77;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .search-button-box i:last-child {
+        height: 100%;
+        width: 60px;
+        font-size: 30px;
+        color: #e72e77;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .search-button-box h1 {
+        height: 100%;
+        width: 515px;
+        color: #e72e77;
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .search-box {
+        display: none;
+    }
+
+    .popular-searches {
+        gap: 10px;
+        display: none;
+    }
+
+    .search-input-box input {
+        height: 40px;
+        width: 180px;
+    }
+
+    .search-box button {
+        width: 120px;
+    }
+
+    .popular-searches h4 {
+        font-size: 15px;
+    }
+
+    .popular-searches-links {
+        font-size: 12px;
+    }
+    
 }

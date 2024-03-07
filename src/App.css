@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html, body{
+  overflow-x: hidden;
+}
+
+
 li {
   list-style: none;
 }
@@ -18,6 +23,27 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+#check:checked ~ .sidebar-container {
+  transform: translateX(0%);
+}
+
+#open-menu {
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+#close-menu {
+  font-size: 35px;
+  cursor: pointer;
+  color: #000;
+  /* display: none; */
 }
 
 .nav-left h1{
@@ -198,3 +224,127 @@ li {
   cursor: pointer;
 }
 
+@media (min-width: 1000px) and (max-width: 1280px) {
+  .nav-left h1{
+    font-size: 20px;
+  }
+
+  .nav-center {
+    width: 600px;
+  }
+}
+
+@media (min-width: 840px) and (max-width: 1000px) {
+  .navbar {
+    height: 40px;
+  }
+  
+  .nav-left h1{
+    font-size: 20px;
+  }
+
+  .nav-center {
+    width: 500px;
+  }
+
+  .nav-center li:last-child {
+    display: none;
+  }
+
+}
+
+/* Max Width : 840px */
+@media (max-width: 840px) {
+
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nav-center {
+    display: none;
+  }
+
+  .nav-right {
+    width: fit-content;
+    gap: 10px;
+  }
+
+  #open-menu {
+    display: block;
+  }
+
+  .sidebar-container {
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+/* 360px to 480px */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .nav-left {
+    gap: 5px;
+  }  
+  
+  .nav-left h1 {
+      font-size: 20px;
+    }
+
+  .nav-right {
+    font-size: 15px;
+  }
+
+  .nav-right i{
+    width: 25px;
+    height: 25px;
+    font-size: 10px;
+  }
+
+  .nav-right button {
+    width: 80px;
+    height: 25px;
+  }
+
+}
+
+/* 280px to 360px */
+@media (max-width: 360px) {
+  .navbar {
+    padding: 10px;
+    height: 35px;
+    gap: 10px;
+  }
+
+  #open-menu {
+    font-size: 15px;
+  }
+
+  .nav-left {
+    gap: 5px;
+  }  
+  
+  .nav-left h1 {
+      font-size: 15px;
+    }
+
+  .nav-right {
+    font-size: 15px;
+    gap: 5px;
+  }
+
+  .nav-right i{
+    width: 25px;
+    height: 25px;
+    font-size: 10px;
+  }
+
+  .nav-right button {
+    width: 80px;
+    height: 25px;
+  }
+
+}

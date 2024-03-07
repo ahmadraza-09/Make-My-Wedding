@@ -19,6 +19,11 @@ const Herocomp = () => {
             <div className="suggestions-container2"></div>
             <button>Get Started</button>
         </div>
+        <div className="search-button-box">
+          <i class="fa-solid fa-store"></i>
+          <h1>Find Vendors</h1>
+          <i class="fa-solid fa-angles-right"></i>
+        </div>
         <div className="popular-searches">
           <h4>Popular Searches:</h4>
           <div className="popular-searches-links">
