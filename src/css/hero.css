@@ -192,11 +192,9 @@
         padding-left: 20px;
     }
 
-    
-
     .search-button-box {
         position: absolute;
-        top: 300px;
+        top: 520px;
         width: 420px;
         height: 60px;
         background-color: #fff;
@@ -204,6 +202,8 @@
         padding: 0px;
         display: flex;
         align-items: center;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        cursor: pointer;
     }
 
     .search-button-box i:first-child {
@@ -232,7 +232,7 @@
 
     .search-button-box h1 {
         height: 100%;
-        width: 515px;
+        width: 300px;
         color: #e72e77;
         display: flex;
         align-items: center;

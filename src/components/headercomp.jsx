@@ -553,6 +553,10 @@ const Headercomp = () => {
             <i className="fa-solid fa-magnifying-glass"></i>
             <button onClick={() => {navigate('/login')}}>Log In</button>
         </div>
+
+        <div className="search-page">
+          
+        </div>
       </div>
     </>
   )

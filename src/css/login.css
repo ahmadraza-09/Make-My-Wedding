@@ -162,3 +162,84 @@
     color: #fff;
     cursor: pointer;
 }
+
+@media (min-width: 680px) and (max-width: 840px) {
+    .login-container {
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        height: fit-content;
+    }
+    
+    .login-container-left {
+        width: 100%;
+        height: 250px;
+        /* border: 5px solid red; */
+        background-position: center;
+    }
+
+    .login-container-right {
+        width: 100%;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 680px) {
+    .login-container {
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .login-container-left {
+        width: 100%;
+        height: 250px;
+        /* border: 5px solid red; */
+        background-position: center;
+    }
+
+    .login-container-right {
+        width: 100%;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .social-box {
+        width: 50%;
+    }
+}
+
+@media (min-width: 280px) and (max-width: 480px) {
+    .login-container {
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .login-container-left {
+        width: 100%;
+        height: 250px;
+        /* border: 5px solid red; */
+        background-position: center;
+    }
+
+    .login-container-right {
+        width: 100%;
+        background-color: #fff;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .social-box {
+        width: 50%;
+    }
+}
