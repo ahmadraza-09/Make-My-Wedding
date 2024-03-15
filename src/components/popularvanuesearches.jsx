@@ -240,10 +240,10 @@ const PopularVenueSearches = () => {
         </div>
       </div>
 
-      <div className="popular-slider-container">
+      <div className="popular-slider-container2">
         <h2>Popular Searches</h2>
         <i id='leftButton2' class="fa-solid fa-angle-left slide-button" ref={backBtnRef2} onClick={handleBackClick2}></i>
-        <div className="card-wrapper" ref={scrollContainerRef2}>
+        <div className="card-wrapper2" ref={scrollContainerRef2}>
           <div className="card2">
             <div className="image-box2">
               <img src="Images/bridal-wear.webp" alt="" />
