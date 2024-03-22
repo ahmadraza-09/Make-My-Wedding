@@ -183,13 +183,15 @@
     .hero-section h1 {
         width: 100%;
         font-size: 30px;
-        text-align: start;
-        padding-left: 20px;
+        text-align: center;
+        /* padding-left: 20px; */
     }
     
     .hero-section h4 {
         font-size: 20px;
-        padding-left: 20px;
+        text-align: center;
+        margin-bottom: 30px;
+        /* padding-left: 20px; */
     }
 
     .search-button-box {
@@ -270,6 +272,11 @@
 
 /* 280px to 480px */
 @media (min-width: 280px) and (max-width:480px) {
+
+    .hero-section {
+        height: 400px;
+    }
+
     .hero-section h1 {
         width: 100%;
         font-size: 30px;
@@ -280,13 +287,14 @@
     .hero-section h4 {
         font-size: 15px;
         margin-bottom: 30px;
+        padding-left: 25px;
     }
 
     .search-button-box {
         position: absolute;
-        top: 520px;
-        width: 420px;
-        height: 60px;
+        top: 430px;
+        width: 320px;
+        height: 40px;
         background-color: #fff;
         border-radius: 5px;
         padding: 0px;
@@ -299,7 +307,7 @@
     .search-button-box i:first-child {
         height: 100%;
         width: 60px;
-        font-size: 30px;
+        font-size: 20px;
         background-color: #e72e77;
         display: flex;
         align-items: center;
@@ -311,7 +319,7 @@
     .search-button-box i:last-child {
         height: 100%;
         width: 60px;
-        font-size: 30px;
+        font-size: 20px;
         color: #e72e77;
         display: flex;
         align-items: center;
@@ -326,7 +334,7 @@
         color: #e72e77;
         display: flex;
         align-items: center;
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 600;
     }
 

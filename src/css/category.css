@@ -1,0 +1,128 @@
+.category-section {
+    width: 100%;
+    height: fit-content;
+    /* border: 2px solid #000; */
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.category-section .category-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.category-header .see-all-category {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #e72e77;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.see-all-category i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+}
+
+.category-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.category-card {
+    width: 550px;
+    height: 140px;
+    /* border: 2px solid #000; */
+    background-color: #d8dffc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    gap: 20px;
+}
+
+.dropdown-content {
+    z-index: 2;
+    background-color: black;
+}
+
+.category-card-content {
+    width: 350px;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.category-card-content p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.category-card-image {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.category-card-image img {
+    height: 100%;
+    border-radius: 75px;
+}
+
+/* Responsive */
+@media (min-width: 1000px) and (max-width: 1280px) {
+    .category-card {
+        width: 100%;
+    }
+}
+
+@media (min-width: 840px) and (max-width: 1000px) {
+    .category-card {
+        width: 100%;
+    }
+}
+
+@media (min-width: 680px) and (max-width: 840px) {
+    .category-card {
+        width: 100%;
+    }
+
+    .category-section {
+        padding: 10px 30px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 680px) {
+    .category-card {
+        width: 100%;
+    }
+
+    .category-section {
+        padding: 10px 30px;
+    }
+}
+
+@media (min-width: 280px) and (max-width: 480px) {
+    .category-card {
+        width: 100%;
+    }
+
+    .category-section {
+        padding: 35px 20px 0px;
+    }
+}
