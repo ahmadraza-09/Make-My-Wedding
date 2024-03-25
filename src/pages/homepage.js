@@ -4,8 +4,10 @@ import '../App.css';
 import '../css/hero.css';
 import '../css/popularvenuesearches.css';
 import '../css/category.css';
+import '../css/footer.css';
 import PopularVenueSearches from "../components/popularvanuesearches";
 import Categorycomp from "../components/categorycomp";
+import Footercomp from "../components/footercomp";
 
 const Homepage = () => {
   return (
@@ -14,6 +16,7 @@ const Homepage = () => {
       {<Herocomp/>}
       {<PopularVenueSearches/>}
       {<Categorycomp/>}
+      {<Footercomp/>}
     </>
   )
 }
