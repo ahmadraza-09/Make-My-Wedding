@@ -178,6 +178,11 @@ a {
     .footer-socialmedia-section {
         flex-direction: column;
     }
+
+    .footer-socialmedia-right {
+        align-items: start;
+        padding-bottom: 20px;
+    }
 }
 
 @media (min-width: 680px) and (max-width: 840px){

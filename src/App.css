@@ -312,14 +312,14 @@ input[type="checkbox"] {
   }
 
   .nav-right i{
-    width: 25px;
-    height: 25px;
-    font-size: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
   }
 
   .nav-right button {
     width: 80px;
-    height: 25px;
+    height: 30px;
   }
 
 }
@@ -327,13 +327,13 @@ input[type="checkbox"] {
 /* 280px to 360px */
 @media (max-width: 360px) {
   .navbar {
-    padding: 10px;
-    height: 35px;
+    padding: 0px 10px;
+    height: 50px;
     gap: 10px;
   }
 
   #open-menu {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .nav-left {
@@ -350,14 +350,14 @@ input[type="checkbox"] {
   }
 
   .nav-right i{
-    width: 25px;
-    height: 25px;
-    font-size: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
   }
 
   .nav-right button {
     width: 80px;
-    height: 25px;
+    height: 30px;
   }
 
 }
